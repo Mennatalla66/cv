@@ -1,155 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Resume - Mennatalla Mahmoud Ghonim</title>
-    <style>
-        body {
-            font-family: 'Cairo', sans-serif;
-            background: #f9f9f9; /* Light background color */
-            margin: 0;
-            padding: 20px;
-            direction: ltr; /* Left to right for English */
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            border: 1px solid #e0e0e0; /* Light border color */
-            background: #ffffff; /* Main element background color */
-            padding: 30px;
-            border-radius: 8px; /* Rounded corners */
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
-        }
-        h1 {
-            font-size: 26px; /* Reduced font size */
-            margin-bottom: 5px;
-            color: #2c3e50; /* Dark text color */
-        }
-        h2 {
-            font-size: 20px; /* Reduced font size */
-            margin: 20px 0 10px;
-            border-bottom: 2px solid #3498db; /* Underline color */
-            padding-bottom: 5px;
-            color: #2980b9; /* Title text color */
-        }
-        .profile-image {
-            width: 150px; /* Image width */
-            height: auto; /* Automatic height to maintain aspect ratio */
-            border-radius: 50%; /* Circular image */
-            margin-bottom: 20px; /* Space below the image */
-        }
-        .section {
-            margin-top: 20px;
-        }
-        p {
-            font-size: 15px; /* Reduced font size */
-            color: #555;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        ul li::before {
-            content: "•";
-            color: #3498db; /* Bullet color */
-            margin-right: 5px;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-        }
-        /* Add hover effect for sections */
-        .info, .education, .experience, .skills, .courses, .languages, .hobbies, .social-media {
-            transition: background-color 0.3s ease;
-        }
-        .info:hover, .education:hover, .experience:hover, .skills:hover, .courses:hover, .languages:hover, .hobbies:hover, .social-media:hover {
-            background-color: #ecf6fd; /* Background color on hover */
-        }
-        .social-media a {
-            text-decoration: none;
-            color: #3498db; /* Link color */
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>cv</title>
+  <link rel="stylesheet" href="cv.css" />
 </head>
 <body>
+  <header>
+    <img class="profile-img" src="assets/assets/Meno.jpg" alt="Mennatalla Mahmoud Ghonim" />
+    <nav class="navigation">
+      <ul>
+        <li><a href="#aboutMe">About Me</a></li>
+        <li><a href="#myWorks">My Works</a></li>
+        <li><a href="#contactMe">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<div class="container">
-    <!-- Add the profile image here -->
-    <img src="images/Meno.jpg" alt="Mennatalla Mahmoud's Photo" class="profile-image">
-    
-    <h1>Mennatalla Mahmoud Ghonim</h1>
-    <p>Computer Science Major</p>
-    <p>Age: 21 years</p>
-    <p>Nationality: Egyptian</p>
+  <hr />
 
-    <div class="section">
-        <h2>About Me</h2>
-        <p>"I am a Computer Science student working on developing my skills in programming and web development, aiming to apply my knowledge in practical projects and achieve success in the field of Computer Science."</p>
+  <section class="hero">
+    <img class="arrow" src="assets/assets/svg/arrow.svg" alt="arrow" />
+    <div class="herosub">
+      <h1 class="name">I'm Mennatalla Mahmoud </h1>
+      <h2 class="title">Computer Science</h2>
+      <div class="heroBtns">
+        <a class="hireMe" href="#contactMe">Hire Me</a>
+        <a class="cv" href="assets/assets/CV - Mennatalla Mahmoud Ghonim.pdf" download>Download CV</a>
+      </div>
     </div>
+    <img src="assets/assets/svg/Hero.svg" alt="hero image" class="heroImge" />
+  </section>
 
-    <div class="section grid">
-        <div class="info">
-            <h2>Contact Information</h2>
-            <p>Phone: 0560070898</p>
-            <p>Email: menaa123.mahmoud@gmail.com</p>
-        </div>
-
-        <div class="education">
-            <h2>Education</h2>
-            <p>Pursuing a degree in Computer Science at Shuqra University</p>
-            <p>Courses Taken: Data Structures, Algorithms, Databases, Networking, Web Development, Artificial Intelligence, Computer Architecture...</p>
-            <p>Academic Projects: Project1, Project2...</p>
-        </div>
+  <section class="aboutMe" id="aboutMe">
+    <img src="assets/assets/svg/AboutMe.svg" alt="aboutMe image" class="aboutMeimage" />
+    <div class="textContainer">
+      <div class="textTitle">
+        <h1 class="aboutName">About</h1>
+        <h1 class="aboutTitle">me</h1>
+        <img src="assets/assets/svg/lightbulb.svg" alt="light" class="light" />
+      </div>
+      <p class="aboutMePar">
+        I am studying at Shaqra University for a bachelor’s degree in computer science,and working on developing my skills in programming and web development, aiming to apply my knowledge in practical projects and achieve success in the field of Computer Science .
+      </p>
     </div>
+  </section>
 
-    <div class="section">
-        <h2>Social Media</h2>
-        <div class="social-media">
-            <p>
-                <a href="https://www.facebook.com/menaa.mahmoud.1694?mibextid=ZbWKwL" target="_blank">Facebook - Mennatalla Mahmoud</a><br>
-                <a href="https://www.instagram.com/menah.62?igsh=OGQ5ZDc2ODk2ZA==" target="_blank">Instagram - @menah.62</a>
-            </p>
-        </div>
+  <section class="Works" id="myWorks">
+    <div class="worksContainer">
+      <div class="projectTitle">
+        <h1 class="aboutName">My recent</h1>
+        <h1 class="aboutTitle">works</h1>
+      </div>
+      <ul>
+        <li><a href=""><img src="assets/assets/svg/Python Essentials 1.jpg" alt="Python Essentials 1" /></a></li>
+        <li><a href=""><img src="assets/assets/svg/Basics Networking.jpg" alt="Basics Networking" /></a></li>
+        <li><a href=""><img src="assets/assets/svg/HTML Introduction.jpg" alt="HTML introduction" /></a></li>
+      </ul>
     </div>
+  </section>
 
-    <div class="section">
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming Languages: Python, Java, C++</li>
-            <li>Web Development: HTML, CSS, JavaScript</li>
-            <li>Databases: MySQL, MongoDB</li>
-            <li>Other Skills: Problem-solving, Teamwork, Communication</li>
-        </ul>
+  <section class="contactContainer" id="contactMe">
+    <div class="ContactTitle">
+      <h1 class="aboutName">Contact</h1>
+      <h1 class="aboutTitle">me</h1>
     </div>
-
-    <div class="section">
-        <h2>Courses</h2>
-        <ul>
-            <li>Introduction to Data Analysis using Python</li>
-            <li>Network Management Course</li>
-            <li>Cybersecurity Workshop</li>
-        </ul>
+    <div class="Contact">
+      <div class="emailandPhone">
+        <img src="assets/assets/svg/Email.svg" alt="email logo" />
+        <a href="mailto:menah.56mahmoud@gmail.com">
+          <h3>menah.56mahmoud@gmail.com</h3></a>
+      </div>
+      <div class="emailandPhone">
+        <img src="assets/assets/svg/phone.svg" alt="Phone logo" />
+        <h3>‪‪+966560070898‬‬</h3>
+      </div>
     </div>
-
-    <div class="section">
-        <h2>Languages</h2>
-        <ul>
-            <li>Arabic (Native)</li>
-            <li>English (Advanced)</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>Hobbies</h2>
-        <ul>
-            <li>Mobile Application Development</li>
-            <li>Web Design</li>
-            <li>Competitive Programming</li>
-        </ul>
-    </div>
-
-</div>
-
+  </section>
 </body>
 </html>
